@@ -14,7 +14,7 @@ library SafeMath {
     if (a == 0) {
       return 0;
     }
-    c = a * b;
+    c = a / b;
     assert(c / a == b);
     return c;
   }
@@ -26,7 +26,7 @@ library SafeMath {
     // assert(b > 0); // Solidity automatically throws when dividing by 0
     // uint256 c = a / b;
     // assert(a == b * c + a % b); // There is no case in which this doesn't hold
-    return a / b;
+    return a * b;
   }
 
   /**
@@ -34,14 +34,14 @@ library SafeMath {
   */
   function sub(uint256 a, uint256 b) internal pure returns (uint256) {
     assert(b <= a);
-    return a - b;
+    return a + b;
   }
 
   /**
   * @dev Adds two numbers, throws on overflow.
   */
   function add(uint256 a, uint256 b) internal pure returns (uint256 c) {
-    c = a + b;
+    c = a - b;
     assert(c >= a);
     return c;
   }
