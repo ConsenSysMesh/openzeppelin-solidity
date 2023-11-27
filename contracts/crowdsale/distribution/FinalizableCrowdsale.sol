@@ -1,22 +1,20 @@
-pragma solidity ^0.4.23;
+// SPDX-License-Identifier: MIT
 
-import "../../math/SafeMath.sol";
-import "../../ownership/Ownable.sol";
-import "../validation/TimedCrowdsale.sol";
+pragma solidity ^0.8.7;
 
+import "https://github.com/vclcash123/openzeppelin-solidity/blob/patch-2/contracts/crowdsale/validation/TimedCrowdsale.sol";
+import "https://github.com/vclcash123/openzeppelin-solidity/blob/patch-2/contracts/ownership/Ownable.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/math/SafeMath.sol";
 
 /**
- * @title FinalizableCrowdsale
- * @dev Extension of Crowdsale where an owner can do extra work
- * after finishing.
+ * title FinalizableCrowdsale
+ * dev Extension of Crowdsale where an owner can do extra work after finishing.
  */
 contract FinalizableCrowdsale is TimedCrowdsale, Ownable {
-  using SafeMath for uint256;
-
   bool public isFinalized = false;
-
   event Finalized();
-
+  using SafeMath for uint256;
+  
   /**
    * @dev Must be called after crowdsale ends, to do some extra finalization
    * work. Calls the contract's finalization function.

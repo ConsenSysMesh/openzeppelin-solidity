@@ -1,11 +1,12 @@
-pragma solidity ^0.4.23;
+// SPDX-License-Identifier: MIT
 
-import "../../math/SafeMath.sol";
-import "../Crowdsale.sol";
+pragma solidity ^0.8.7;
+
+import "https://github.com/vclcash123/openzeppelin-solidity/blob/patch-2/contracts/crowdsale/Crowdsale.sol";
 
 
 /**
- * @title TimedCrowdsale
+ * title TimedCrowdsale
  * @dev Crowdsale accepting contributions only within a time frame.
  */
 contract TimedCrowdsale is Crowdsale {

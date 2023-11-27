@@ -1,7 +1,9 @@
-pragma solidity ^0.4.23;
+// SPDX-License-Identifier: MIT License Modern Variant
 
-import "../Crowdsale.sol";
-import "../../token/ERC20/MintableToken.sol";
+pragma solidity ^0.8.7;
+
+import "https://github.com/vclcash123/openzeppelin-solidity/blob/patch-2/contracts/crowdsale/Crowdsale.sol";
+import "https://github.com/vclcash123/openzeppelin-solidity/blob/patch-2/contracts/token/ERC20/MintableToken.sol";
 
 
 /**

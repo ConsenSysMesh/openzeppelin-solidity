@@ -1,8 +1,5 @@
-pragma solidity ^0.4.23;
-
-import "./ERC20Basic.sol";
-import "./ERC20.sol";
-
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.7;
 
 /**
  * @title SafeERC20

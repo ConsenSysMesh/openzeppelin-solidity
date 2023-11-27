@@ -1,6 +1,8 @@
-pragma solidity ^0.4.23;
+// SPDX-License-Identifier: MIT
 
-import "./Roles.sol";
+pragma solidity ^0.8.4;
+
+import "https://github.com/vclcash123/openzeppelin-solidity/blob/patch-2/contracts/ownership/rbac/Roles.sol";
 
 
 /**

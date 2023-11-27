@@ -1,11 +1,12 @@
 /* solium-disable security/no-block-members */
+// SPDX-License-Identifier: MIT
 
-pragma solidity ^0.4.23;
+pragma solidity ^0.8.4;
 
-import "./ERC20Basic.sol";
-import "./SafeERC20.sol";
-import "../../ownership/Ownable.sol";
-import "../../math/SafeMath.sol";
+import "https://github.com/vclcash123/openzeppelin-solidity/blob/patch-2/contracts/token/ERC20/ERC20Basic.sol";
+import "https://github.com/vclcash123/openzeppelin-solidity/blob/patch-2/contracts/token/ERC20/SafeERC20.sol";
+import "https://github.com/vclcash123/openzeppelin-solidity/blob/patch-2/contracts/ownership/Ownable.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/utils/math/SafeMath.sol";
 
 
 /**
